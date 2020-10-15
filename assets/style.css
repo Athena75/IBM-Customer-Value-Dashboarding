@@ -1,0 +1,44 @@
+.prediction {
+    color: #2C3E50;
+    font-size: 28px;
+/*    border: 2px solid #96dbfa;
+    background: #EAF2F8;
+    */
+    padding: 20px;
+    margin-inline-start: 0.80em;
+
+}
+
+.title {
+    font-size: 35px;
+    color: #b24e43;
+    float: left;
+
+
+}
+
+.title .prediction {
+    textAlign: center;
+    font-family: Verdana;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    textAlign: center;
+    font-family: Verdana;
+ }
+
+ .row {
+   display: table;
+   width: 1500px;
+   horizontalAlign: middle;
+   textAlign: center;
+   vertical-align: top;
+   margin-left: 3vw;
+   margin-top: 3vw;
+ }
+
+.graph {
+    width: 700px
+}

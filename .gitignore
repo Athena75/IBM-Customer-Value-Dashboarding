@@ -1,0 +1,5 @@
+app-dash-venv
+__pycache__
+.idea
+src/.ipynb_checkpoints
+data/*.csv
