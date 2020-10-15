@@ -96,7 +96,13 @@ for var in nums:
 # fig_features_importance.show()
 
 
-app = dash.Dash()
+app = dash.Dash(__name__,
+# external CSS stylesheets
+ external_stylesheets = [
+     #"https://raw.githack.com/Athena75/IBM-Customer-Value-Dashboarding/main/assets/style.css",
+     "https://rawcdn.githack.com/Athena75/IBM-Customer-Value-Dashboarding/df971ae38117d85c8512a72643ce6158cde7a4eb/assets/style.css"
+ ]
+)
 
 # We apply basic HTML formatting to the layout
 app.layout = html.Div(children=[
@@ -145,7 +151,5 @@ def update_prediction(*X):
     return " {}% No , {}% Yes".format("%.2f" % (prediction[0] * 100),
                                       "%.2f" % (prediction[1] * 100))
 
-
-app.css.append_css({"external_url": os.path.join(ASSETS_PATH,"style.css")})
 
 server = app.server
